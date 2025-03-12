@@ -112,6 +112,7 @@ public class PPGActivity extends AppCompatActivity {
         YAxis leftAxis = ppgChart.getAxisLeft();
         leftAxis.setAxisMinimum(0f);
         leftAxis.setAxisMaximum(1023f); // Assuming analog range for gravity PPG
+        leftAxis.setTextColor(Color.WHITE);
 
         ppgChart.getAxisRight().setEnabled(false);
         Description desc = new Description();

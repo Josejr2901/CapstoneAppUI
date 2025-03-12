@@ -9,6 +9,7 @@ public class ECGEntry {
         this.voltage = voltage;
     }
 
+
     public String getTimestamp() {
         return timestamp;
     }

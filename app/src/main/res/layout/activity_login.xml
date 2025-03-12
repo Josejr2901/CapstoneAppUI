@@ -9,7 +9,7 @@
     android:orientation="vertical"
     android:padding="15dp"
     tools:context=".Login"
-    android:background="#FFFFFF">
+    android:background="#2C2C2C">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20sp"
-        android:textColor="#0D3B64"
+        android:textColor="#FFFFFF"
         android:gravity="center"
         android:text="@string/login"
         android:textSize="20sp"
@@ -38,7 +38,7 @@
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#B8CCD0"
+            android:background="#FFFFFF"
             android:textColor="#000000"
             android:hint="@string/email" />
 
@@ -54,7 +54,7 @@
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#B8CCD0"
+            android:background="#FFFFFF"
             android:hint="@string/password"
             android:textColor="#000000"
             android:inputType="textPassword"/>
@@ -75,7 +75,7 @@
         android:layout_marginTop="10sp"
         android:layout_marginBottom="20sp"
         android:textColor="#FFFFFF"
-        android:backgroundTint="#0D3B64"
+        android:backgroundTint="#000000"
         android:text="@string/loginButton" />
 
     <TextView
@@ -86,7 +86,7 @@
         android:gravity="center"
         android:text="@string/click_to_register"
         android:textSize="20sp"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textStyle="bold" />
 
 </LinearLayout>

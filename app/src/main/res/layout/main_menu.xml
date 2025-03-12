@@ -12,29 +12,27 @@
 
     <Button
         android:id="@+id/logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="68dp"
         android:backgroundTint="#2C2C2C"
         android:text="Logout"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/card_all_sensors"
-        app:layout_constraintStart_toStartOf="@+id/card_all_sensors"
-        app:layout_constraintTop_toBottomOf="@+id/signin"
-        app:layout_constraintVertical_bias="0.391" />
+        app:layout_constraintTop_toBottomOf="@+id/card_all_sensors" />
 
     <TextView
         android:id="@+id/main_title"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="334dp"
+        android:layout_height="32dp"
         android:text="Cardiovascular Biometric Tracker"
+        android:textColor="#FFFFFF"
         android:textSize="22sp"
         android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="24dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- ECG Signal Card -->
     <androidx.cardview.widget.CardView
@@ -270,15 +268,15 @@
 
     <Button
         android:id="@+id/signin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
         android:backgroundTint="#2C2C2C"
-        android:text="Sign in"
 
+        android:text="Sign in"
         android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/card_all_sensors"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintEnd_toStartOf="@+id/logout"
+        app:layout_constraintHorizontal_bias="0.639"
         app:layout_constraintStart_toStartOf="@+id/card_all_sensors"
         app:layout_constraintTop_toBottomOf="@+id/card_all_sensors" />
 

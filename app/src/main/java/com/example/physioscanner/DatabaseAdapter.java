@@ -4,6 +4,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
@@ -20,11 +22,22 @@ public class DatabaseAdapter extends RecyclerView.Adapter<DatabaseAdapter.ViewHo
         return new ViewHolder(view);
     }
 
+//    @Override
+//    public void onBindViewHolder(ViewHolder holder, int position) {
+//        DatabaseRecord record = records.get(position);
+//        holder.timestampTextView.setText("Timestamp: " + record.getTimestamp());
+//        holder.voltageTextView.setText(record.getLabel() + ": " + record.getValue());
+//    }
+
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         DatabaseRecord record = records.get(position);
         holder.timestampTextView.setText("Timestamp: " + record.getTimestamp());
         holder.voltageTextView.setText(record.getLabel() + ": " + record.getValue());
+
+        // Set text color to white for both TextViews
+        holder.timestampTextView.setTextColor(ContextCompat.getColor(holder.itemView.getContext(), R.color.white));
+        holder.voltageTextView.setTextColor(ContextCompat.getColor(holder.itemView.getContext(), R.color.white));
     }
 
     @Override

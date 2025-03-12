@@ -1,6 +1,7 @@
 package com.example.physioscanner;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
@@ -99,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
         YAxis leftAxis = ecgChart.getAxisLeft();
         leftAxis.setAxisMinimum(0f);
         leftAxis.setAxisMaximum(5f);  // Voltage range for ECG
+        leftAxis.setTextColor(Color.WHITE);
 
         ecgChart.getAxisRight().setEnabled(false);
         ecgChart.getDescription().setEnabled(false);
